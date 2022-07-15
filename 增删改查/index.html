@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
+    <style>
+        .form-group {
+            width: 500px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="contaier">
+
+        <div class="form-group has-success has-feedback">
+            <label class="control-label" for="inputSuccess2">姓名</label>
+            <input type="text" class="form-control username" id="inputSuccess2" aria-describedby="inputSuccess2Status"
+                placeholder="请输入您的姓名">
+        </div>
+        <div class="form-group has-warning has-feedback">
+            <label class="control-label" for="inputWarning2">联系电话</label>
+            <input type="text" class="form-control number" id="inputWarning2" aria-describedby="inputWarning2Status"
+                placeholder="请输入11位电话号码">
+        </div>
+        <div class="form-group has-error has-feedback">
+            <label class="control-label" for="inputError2">学历</label>
+            <input type="text" class="form-control school" id="inputError2" aria-describedby="inputError2Status"
+                placeholder="请输入您的母校">
+
+        </div>
+        <div class="form-group has-success has-feedback">
+            <label class="control-label" for="inputSuccess2">年龄</label>
+            <input type="text" class="form-control age" id="inputSuccess2" aria-describedby="inputSuccess2Status"
+                placeholder="请输入您的年龄">
+        </div>
+        <div class="form-group has-success has-feedback">
+            <label class="control-label" for="inputSuccess2">期望薪资</label>
+            <input type="text" class="form-control salary" id="inputSuccess2" aria-describedby="inputSuccess2Status"
+                placeholder="您希望的年薪">
+        </div>
+
+
+    </div>
+    <button type="button" class="btn btn-primary btn-lg active add">保存</button>
+    <button type="button" class="btn btn-default btn-lg active nu">重置</button>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <table class="table table-hover">
+        <tr>
+            <td>姓名</td>
+            <td>联系电话</td>
+            <td>学历</td>
+            <td>年龄</td>
+            <td>期望薪资</td>
+            <td>操作</td>
+        </tr>
+        <tbody class="tbody">
+
+        </tbody>
+
+    </table>
+    <!-- 模态框 -->
+    <div class="modal fade" id="modifyModal" tabindex="-1" role="dialog" aria-labelledby="modifyModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="modifyModal">修改</h4>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="title" class="control-label">标题:</label>
+                            <input type="text" class="form-control" id="title">
+                        </div>
+                        <div class="form-group">
+                            <label for="user" class="control-label">发布人:</label>
+                            <textarea class="form-control" id="user"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="data" class="control-label">发布时间:</label>
+                            <textarea class="form-control" id="data"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                    <button type="button" class="btn btn-primary modify-data">保存</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+
+
+
+
+
+
+    <script src="./js/jquery.min.js"></script>
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
+    <script src="./js/axios.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
